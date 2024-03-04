@@ -1,0 +1,55 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            var a=32;
+            var b=4;
+            var c=87;
+            var res=a>b ? a:(b>a ?b:a);
+            var res1=res>c ? res:c;
+            document.write("The biggest number:"+res1);
+                //OR
+
+            var a=221;
+            var b=55;
+            var c=20;
+            var res=a>b ? a:(b>c ? b:c);
+           
+            document.write("<br>The biggest number:"+res);
+
+
+            //OR
+
+            var num1 = 2;
+            var num2 = 61;
+            var num3 = 9;
+            var num4 = 300;
+
+            var largestNumber = Math.max(num1, num2, num3, num4);
+
+            document.write(`<br>The largest number is: ${largestNumber}`);
+
+                    //OR
+            var num1=2;
+            var num2 = 61;
+            var num3 = 9;
+            var num4 = 300;
+            var smallestNumber = num1;
+            if(smallestNumber>num2)
+            {
+                smallestNumber=num2;
+            }
+            if(smallestNumber>num3)
+            {
+                smallestNumber=num3;
+            }
+            if(smallestNumber>num4)
+            {
+                smallestNumber=num4;
+            }
+            document.write(`<br>The smallest Number is:${smallestNumber}`)
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>Operators</title>
+</head>
+<body>
+    <script>
+        //relational 
+        var num1=10;
+        var num2='10';
+        document.write(num1==num2);
+        document.write("<br>"+(num1===num2));
+        document.write("<br>"+(num2=!num1));
+
+        //Assignment operator
+        var n1=11;
+        var n2=12;
+        document.write("<br>"+(n1+=6));
+        document.write("<br>"+(n1-=2));//15
+        document.write("<br>"+(n2-=2));
+
+        //logical operator
+        var a1=54;
+        var a2=41;
+        var a3=119;
+        var result=a1>a2 ? a1:(a1>a3 ? a1:a3);
+        document.write(`<br>The biggest number is:${result}`);
+        //Bitwise opearators
+        var b1=5;
+        var b2=6;
+        var b4=~5
+        var b5=~(-5);
+        var b6=5<<2;//5*2^2=5*4=20
+        var b7=5>>2;//5/2^2=5/4=1
+        document.write("<br>Bitwise AND:"+(b1&b2));
+        document.write("<br>Bitwise OR:"+(b1|b2));
+        document.write("<br>Bitwise XOR:"+(b1^b2));
+        document.write("<br>Bitwise NOT:"+(b4));
+        document.write("<br>Bitwise NOT:"+(b5));
+        document.write("<br>Left Shift:"+(b6));
+        document.write("<br>Right Shift:"+(b7));
+        //increment decrement
+        var c1=10;
+        var c2=-10;
+       // document.write("<br>"+(++c1 + ++c1));
+        document.write("<br>"+(c1++ + c1++));
+        document.write("<br>"+(++c2 + ++c2));
+
+        //swapping of 2 numbers
+        var a=10;
+        var b=20;
+        [a,b]=[b,a];
+        document.write("<br>swapping of 2 numbers:a="+a+",b="+b);
+
+
+    </script>
+    
+</body>
+</html>
